@@ -58,6 +58,8 @@ Santiago:~$
 
 **4. Hace un PR y aceptalo**
 
+Lo que hice en este punto fue desde github ir a la pestaña pull request para desde allí seleccionar el mi repo (mi fork) y las ramas base y compare sobre las que quiero hacer el pull request. Lo que hice en este caso fue poner como rama base al main y como compare a mi rama santiago, de modo que el pull request se realizó desde la rama santiago hacia el main, conteniendo los commits atómicos que había realizado junto con los demas cambios (fue como hacer un merge).
 
+**5. Crear una versión etiquetada**
 
 
