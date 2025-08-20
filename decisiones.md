@@ -1,3 +1,5 @@
+**TRABAJO PRÁCTICO 1**
+
 **1. Configurar tu entorno y preparar tu repositorio**
 
 Hice un fork del repositorio base apretando la opción de Fork arriba a la derecha y lo asocié a mi cuenta, me  quedó la siguiente URL para mi repo: https://github.com/SantiagoTricherri/2025_TP01_RepoBase.git
@@ -74,3 +76,8 @@ Escribiendo objetos: 100% (1/1), 175 bytes | 175.00 KiB/s, listo.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/SantiagoTricherri/2025_TP01_RepoBase.git
  * [new tag]         v1.0 -> v1.0
+
+
+
+**TRABAJO PRÁCTICO 2**
+**
