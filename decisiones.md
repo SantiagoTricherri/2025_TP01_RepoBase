@@ -79,5 +79,19 @@ To https://github.com/SantiagoTricherri/2025_TP01_RepoBase.git
 
 
 
-**TRABAJO PRÁCTICO 2**
-**
+**TRABAJO PRÁCTICO 3**
+
+
+**1. Configuración inicial del proyecto**
+
+- Crear una organización en Azure DevOps
+
+Para crear la organización fui a la pantalla principal de azure devops, y usando el botón create organization cree mi organización, a la cual nombre SantiagoTricherri.
+
+- Crear un proyecto con la metodología ágil que consideres apropiada
+
+ Una vez dentro de mi organización, creé un nuevo proyecto usando el botón New Project, a mi proyecto lo nombré Sample01TP03Cat2025 y lo creé privado y con la metodologia ágil Scrum.
+
+ 
+- Configurar los equipos y áreas del proyecto
+Documentar en decisiones.md por qué elegiste esa metodología
