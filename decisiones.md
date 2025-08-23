@@ -94,4 +94,16 @@ Para crear la organización fui a la pantalla principal de azure devops, y usand
 
  
 - Configurar los equipos y áreas del proyecto
-Documentar en decisiones.md por qué elegiste esa metodología
+
+Para esto, primero que nada fui a project settings, teams, y allí creé dos equipos de trabajo, uno llamado Backend y otro Frontend. Por otro lado para crear las áreas fui dentro de project settings a project configuration, y desde allí creé dos sprints con su respectiva fecha, de modo que el segundo empiece cuando termine el primero
+
+
+**2. Gestión del trabajo con Azure Boards**
+- Crear al menos:
+. 1 Epic que represente una funcionalidad completa
+. 3 User Stories relacionadas con el Epic
+. 2 Tasks por cada User Story
+. 2 Bugs de ejemplo
+- Configurar un Sprint de 2 semanas
+- Asignar los work items al Sprint
+
