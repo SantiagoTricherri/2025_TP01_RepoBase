@@ -99,11 +99,58 @@ Para esto, primero que nada fui a project settings, teams, y allí creé dos equ
 
 
 **2. Gestión del trabajo con Azure Boards**
-- Crear al menos:
-. 1 Epic que represente una funcionalidad completa
-. 3 User Stories relacionadas con el Epic
-. 2 Tasks por cada User Story
-. 2 Bugs de ejemplo
+
+- Crear un Epic que represente una funcionalidad completa
+
+Para esto fui a la sección Boards, Work items, y allí creé un nuevo work item de tipo Epic. Lo nombré **Gestión de Pedidos Online**, que representa la funcionalidad general de permitir a los clientes registrarse, armar un carrito y realizar un pedido en la aplicación.
+
+- Crear 3 User Stories relacionadas con el Epic
+
+Dentro del Epic, en la parte de Related Work, usé la opción Add link, Child, Product Backlog Item, y así fui creando tres PBIs como hijos del Epic. Los llamé:
+1. **Registro de usuarios**
+2. **Carrito de compras**
+3. **Pago en línea**
+
+- Crear 2 Tasks por cada User Story
+
+Luego, abrí cada PBI creado y desde Related Work, con la opción Add link, Child, Task, agregué dos tareas. Por ejemplo, en “Registro de usuarios” creé las tareas **Diseñar UI registro** e **Implementar validación y almacenamiento**. Hice lo mismo para los otros dos PBIs, cada uno con dos tareas correspondientes.
+
+- Crear 2 Bugs de ejemplo
+
+En la misma sección Boards, Work items, creé dos nuevos work items de tipo Bug. Los nombré **Validación de contraseña no bloquea envío** y **Carrito no actualiza el total al quitar producto**, simulando errores que podrían encontrarse en el desarrollo.
+
 - Configurar un Sprint de 2 semanas
+
+Para configurar el Sprint fui a Project Settings → Project Configuration → Iterations y allí creé una nueva iteración llamada **Sprint 1**, con una duración de dos semanas.
+
 - Asignar los work items al Sprint
+
+Finalmente, edité algunos PBI, Task y Bug creado, y en el campo Iteration seleccioné **Sprint 1**, de modo que todos quedaran dentro del primer Sprint y pudieran visualizarse desde Boards.
+
+
+**3. Control de versiones con Azure Repos**
+
+- Importar o crear un repositorio con código de una aplicación
+
+Para esto entré en la sección **Repos** dentro de mi proyecto. Allí utilicé la opción **New repository** y cree un nuevo respositorio git llamado PrueaEj3.
+
+- Configurar políticas de branch para la rama principal
+
+Dentro de **Repos, Branches**, seleccioné la rama **main** y abrí el menú de **Branch policies**.  
+Desde allí configuré las siguientes políticas:  
+1. **Requerir Pull Request**: habilité la opción que impide pushear cambios directos a la rama main.  
+2. **Mínimo 1 reviewer**: configuré que cada Pull Request necesite al menos una revisión/aprobación antes de poder hacer merge.
+
+- Crear al menos 2 branches de feature
+
+Desde **Repos, Branches** usé la opción **New branch**. Creé dos ramas nuevas a partir de main, con los nombres:  
+- `feature/login`  
+- `feature/carrito`
+
+- Realizar cambios y crear Pull Requests
+
+Me cambié a cada rama desde la interfaz web de Azure DevOps,  En `feature/login` edité un archivo de ejemplo (README.md) para simular un cambio, y lo guardé en esa rama.  
+Luego fui a **Repos, Pull requests**, y con el botón **New Pull Request** abrí un PR desde `feature/login` hacia `main`. El sistema aplicó la política configurada y me pidió al menos 1 revisor. Lo mismo pasaría con la rama `feature/carrito`.  
+De esta manera se validó el flujo de trabajo: desarrollo en ramas de feature, revisión obligatoria y posterior integración a main mediante Pull Request.
+
 
