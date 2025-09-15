@@ -65,7 +65,7 @@ Lo que hice en este punto fue desde github ir a la pestaña pull request para de
 **5. Crear una versión etiquetada**
 
 Para este paso lo primero que tuve que hacer fue sincronizar mi main local con mi main de github ya que no habia pusheado unos commits, lo hice de la siguiente forma:
-git push origin main
+git push origin main.
 Luego, una vez hecho eso ya pude etiquetar la versión del main y subir el tag, lo hice de la siguiente forma:
 
 Santiago:~$ git tag -a v1.0 -m "Versión inicial v1.0" 
