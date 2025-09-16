@@ -169,5 +169,9 @@ Luego fuimos a **Repos, Pull requests**, y con el botón **New Pull Request** ab
 De esta manera se validó el flujo de trabajo: desarrollo en ramas de feature, revisión obligatoria y posterior integración a main mediante Pull Request.
 
 
+## Uso de IA
+
+Para este TP utilizamos la IA (ChatGPT) como apoyo: nos propuso una estructura de épicas, historias de usuario y tareas para simular un caso real. Por otro lado,  nos ayudó a entender algunos conceptos sobre los que se nos generaban dudas. 
+
 
 
