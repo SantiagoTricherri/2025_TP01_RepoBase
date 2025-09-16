@@ -161,3 +161,7 @@ Luego fuimos a **Repos, Pull requests**, y con el botón **New Pull Request** ab
 De esta manera se validó el flujo de trabajo: desarrollo en ramas de feature, revisión obligatoria y posterior integración a main mediante Pull Request.
 
 
+## Uso de IA 
+
+Durante el desarrollo del trabajo práctico utilizamos ChatGPT como herramienta de apoyo. Nos ayudó a comprender conceptos relacionados con Git, aclarar dudas que surgían durante la simulación de branches y merges, y además nos permitió tener a mano los comandos necesarios para realizar las distintas operaciones de forma más clara y ordenada.
+
