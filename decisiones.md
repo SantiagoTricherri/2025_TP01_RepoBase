@@ -90,7 +90,7 @@ Para crear la organización fui a la pantalla principal de azure devops, y usand
 
 - Crear un proyecto con la metodología ágil que consideres apropiada
 
- Una vez dentro de mi organización, creé un nuevo proyecto usando el botón New Project, a mi proyecto lo nombré Sample01TP03Cat2025 y lo creé privado y con la metodologia ágil Scrum.
+ Una vez dentro de mi organización, creé un nuevo proyecto usando el botón New Project, a mi proyecto lo nombré TP3_4 Tricherri y Ojeda y lo creé privado y con la metodologia ágil Scrum.
 
  
 - Configurar los equipos y áreas del proyecto
