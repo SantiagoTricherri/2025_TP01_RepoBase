@@ -132,7 +132,7 @@ Finalmente, edité algunos PBI, Task y Bug creado, y en el campo Iteration selec
 
 - Importar o crear un repositorio con código de una aplicación
 
-Para esto entré en la sección **Repos** dentro de mi proyecto. Allí utilicé la opción **New repository** y cree un nuevo respositorio git llamado PrueaEj3.
+Para esto entré en la sección **Repos** dentro de mi proyecto. Allí utilicé la opción **New repository** y cree un nuevo respositorio git llamado PruebaEj3.
 
 - Configurar políticas de branch para la rama principal
 
