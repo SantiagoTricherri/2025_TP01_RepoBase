@@ -30,33 +30,33 @@ Para este punto lo que hice fue primero que nada crear un archivo malo.txt que c
 Santiago:$ git checkout main
 Cambiado a rama 'main'
 Tu rama está actualizada con 'origin/main'.
-Santiago:~$ echo "este es el archivo que contiene un error ortografico" > malo.txt
-Santiago:~$ git add malo.txt
-Santiago:~$ git commit -m "agregado archivo con error ortografico"
+Santiago:$ echo "este es el archivo que contiene un error ortografico" > malo.txt
+Santiago:$ git add malo.txt
+Santiago:$ git commit -m "agregado archivo con error ortografico"
 [main 2564b9a] agregado archivo con error ortografico
  1 file changed, 1 insertion(+)
  create mode 100644 malo.txt
-Santiago:~$ git branch hotfix
-Santiago:~$ git checkout hotfix
+Santiago:$ git branch hotfix
+Santiago:$ git checkout hotfix
 Cambiado a rama 'hotfix'
-Santiago:~$ nano error.txt
-Santiago:~$ git add error.txt
-Santiago:~$ git commit -m "corregido error en error.txt"
+Santiago:$ nano error.txt
+Santiago:$ git add error.txt
+Santiago:$ git commit -m "corregido error en error.txt"
 [hotfix 0a43e52] corregido error en error.txt
  1 file changed, 1 insertion(+)
  create mode 100644 error.txt
-Santiago:~$ git checkout main
+Santiago:$ git checkout main
 Cambiado a rama 'main'
 Tu rama está adelantada a 'origin/main' por 1 commit.
   (usa "git push" para publicar tus commits locales)
-Santiago:~$ git merge hotfix
+Santiago:$ git merge hotfix
 Actualizando 2564b9a..0a43e52
 Fast-forward
  error.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 error.txt
-Santiago:~$ git diff main hotfix
-Santiago:~$
+Santiago:$ git diff main hotfix
+Santiago:$
 
 **4. Hace un PR y aceptalo**
 
