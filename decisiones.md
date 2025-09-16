@@ -14,7 +14,9 @@ Para este punto lo que hicimos primero fue crear una rama separada del main llam
 Luego, lo que hicimos fue usar dos archivos de prueba llamados archivodeprueba1.txt y archivodeprueba2.txt. A esos archivos los agregamos a nuestra rama santiago usando los siguientes comandos:
 
 Santiago:$ git add archivodeprueba1.txt
+
 Santiago:$ git commit -m "agregado archivodeprueba1.txt a la rama"
+
 [santiago e4c1e73] agregado archivodeprueba1.txt a la rama
  1 file changed, 1 insertion(+)
  create mode 100644 archivodeprueba1.txt
