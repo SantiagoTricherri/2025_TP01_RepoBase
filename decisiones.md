@@ -27,7 +27,7 @@ Tambien se puede usar el comando git diff main santiago para ver las diferencias
 
 Para este punto lo que hice fue primero que nada crear un archivo malo.txt que contenía un error ortográfico en mi rama main, luego lo que hice fue crear una rama hotfix para poder solucionar el error del archivo malo ahí. Luego, usé el comando nano para acceder al archivo desde la terminal y ahí corregí el error que tenía. Una vez corregido hice el commit, volví a la rama main e hice un merge con hotfix para traerme el archivo corregido que estaba en hotfix, por último tambien use un comando diff para chequear que los dos archivos malo en el main y en el hotfix sean iguales. Estos son los comandos que usé:
 
-Santiago:~$ git checkout main
+Santiago:$ git checkout main
 Cambiado a rama 'main'
 Tu rama está actualizada con 'origin/main'.
 Santiago:~$ echo "este es el archivo que contiene un error ortografico" > malo.txt
