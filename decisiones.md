@@ -33,35 +33,52 @@ Una vez corregido hicimos el commit, volvimos a la rama main e hicimos un merge 
 Estos son los comandos que usamos:
 
 Santiago:$ git checkout main
+
 Cambiado a rama 'main'
 Tu rama está actualizada con 'origin/main'.
+
 Santiago:$ echo "este es el archivo que contiene un error ortografico" > malo.txt
+
 Santiago:$ git add malo.txt
+
 Santiago:$ git commit -m "agregado archivo con error ortografico"
+
 [main 2564b9a] agregado archivo con error ortografico
  1 file changed, 1 insertion(+)
  create mode 100644 malo.txt
+ 
 Santiago:$ git branch hotfix
+
 Santiago:$ git checkout hotfix
+
 Cambiado a rama 'hotfix'
+
 Santiago:$ nano error.txt
+
 Santiago:$ git add error.txt
+
 Santiago:$ git commit -m "corregido error en error.txt"
+
 [hotfix 0a43e52] corregido error en error.txt
  1 file changed, 1 insertion(+)
  create mode 100644 error.txt
+ 
 Santiago:$ git checkout main
+
 Cambiado a rama 'main'
 Tu rama está adelantada a 'origin/main' por 1 commit.
   (usa "git push" para publicar tus commits locales)
+  
 Santiago:$ git merge hotfix
+
 Actualizando 2564b9a..0a43e52
 Fast-forward
  error.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 error.txt
+ 
 Santiago:$ git diff main hotfix
-Santiago:$
+
 
 **4. Hace un PR y aceptalo**
 
@@ -85,7 +102,9 @@ Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/SantiagoTricherri/2025_TP01_RepoBase.git
  * [new tag]         v1.0 -> v1.0
 
+## Uso de IA 
 
+Durante el desarrollo del trabajo práctico utilizamos ChatGPT como herramienta de apoyo. Nos ayudó a comprender conceptos relacionados con Git, aclarar dudas que surgían durante la simulación de branches y merges, y además nos permitió tener a mano los comandos necesarios para realizar las distintas operaciones de forma más clara y ordenada.
 
 **TRABAJO PRÁCTICO 3**
 
@@ -161,7 +180,5 @@ Luego fuimos a **Repos, Pull requests**, y con el botón **New Pull Request** ab
 De esta manera se validó el flujo de trabajo: desarrollo en ramas de feature, revisión obligatoria y posterior integración a main mediante Pull Request.
 
 
-## Uso de IA 
 
-Durante el desarrollo del trabajo práctico utilizamos ChatGPT como herramienta de apoyo. Nos ayudó a comprender conceptos relacionados con Git, aclarar dudas que surgían durante la simulación de branches y merges, y además nos permitió tener a mano los comandos necesarios para realizar las distintas operaciones de forma más clara y ordenada.
 
