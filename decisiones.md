@@ -31,55 +31,39 @@ Tambien se puede usar el comando git diff main santiago para ver las diferencias
 Para este punto lo que hicimos fue, primero que nada, crear un archivo malo.txt que contenía un error ortográfico en nuestra rama main. Luego, creamos una rama hotfix para poder solucionar el error allí. Después, usamos el comando nano para acceder al archivo desde la terminal y corregimos el error que tenía.
 
 Una vez corregido hicimos el commit, volvimos a la rama main e hicimos un merge con hotfix para traernos el archivo corregido que estaba en hotfix. Por último, también usamos un comando diff para chequear que los dos archivos malo en el main y en el hotfix fueran iguales.
+Al final aplicamos el fix a la rama de santiago también.
 
 Estos son los comandos que usamos:
 
-Santiago:$ git checkout main
+echo "este es el archvio con eror ortografico" > malo.txt
 
-Cambiado a rama 'main'
-Tu rama está actualizada con 'origin/main'.
+git add malo1.txt
 
-Santiago:$ echo "este es el archivo que contiene un error ortografico" > malo.txt
+git commit -m "feat: agregar malo.txt con error ortográfico"
 
-Santiago:$ git add malo.txt
+**Creamos la rama de fix y corregimos EL MISMO archivo**
 
-Santiago:$ git commit -m "agregado archivo con error ortografico"
+git checkout -b hotfix
 
-[main 2564b9a] agregado archivo con error ortografico
- 1 file changed, 1 insertion(+)
- create mode 100644 malo.txt
- 
-Santiago:$ git branch hotfix
+nano malo1.txt   # corregís la ortografía
 
-Santiago:$ git checkout hotfix
+git add malo1.txt
 
-Cambiado a rama 'hotfix'
+git commit -m "fix: corregir ortografía en malo1.txt"
 
-Santiago:$ nano error.txt
+# Volvemos a main y traemos el fix
 
-Santiago:$ git add error.txt
+git checkout main
 
-Santiago:$ git commit -m "corregido error en error.txt"
+git merge hotfix
 
-[hotfix 0a43e52] corregido error en error.txt
- 1 file changed, 1 insertion(+)
- create mode 100644 error.txt
- 
-Santiago:$ git checkout main
+git diff main hotfix
 
-Cambiado a rama 'main'
-Tu rama está adelantada a 'origin/main' por 1 commit.
-  (usa "git push" para publicar tus commits locales)
-  
-Santiago:$ git merge hotfix
+# Aplicamos el fix también a la rama de desarrollo (santiago)
 
-Actualizando 2564b9a..0a43e52
-Fast-forward
- error.txt | 1 +
- 1 file changed, 1 insertion(+)
- create mode 100644 error.txt
- 
-Santiago:$ git diff main hotfix
+git checkout santiago
+
+git merge main
 
 
 ## **4. Hace un PR y aceptalo**
