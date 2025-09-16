@@ -35,7 +35,7 @@ Al final aplicamos el fix a la rama de santiago también.
 
 Estos son los comandos que usamos:
 
-echo "este es el archvio con eror ortografico" > malo.txt
+echo "este es el archvio con eror ortografico" > malo1.txt
 
 git add malo1.txt
 
@@ -45,13 +45,13 @@ git commit -m "feat: agregar malo.txt con error ortográfico"
 
 git checkout -b hotfix
 
-nano malo1.txt   # corregís la ortografía
+echo "Error ortográfico corregido" > malo1.txt
 
 git add malo1.txt
 
 git commit -m "fix: corregir ortografía en malo1.txt"
 
-# Volvemos a main y traemos el fix
+**Volvemos a main y traemos el fix**
 
 git checkout main
 
