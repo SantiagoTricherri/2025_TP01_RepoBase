@@ -12,8 +12,8 @@ Para este punto lo que hice primero fue crear una rama separada del main llamada
 
 Luego, lo que hice fue usar dos archivos de prueba llamados archivodeprueba1.txt y archivodeprueba2.txt, a esos archivos los agregue a mi rama santiago usando los siguientes comandos:
 
-Santiago:~$ git add archivodeprueba1.txt
-Santiago:~$ git commit -m "agregado archivodeprueba1.txt a la rama"
+Santiago:$ git add archivodeprueba1.txt
+Santiago:$ git commit -m "agregado archivodeprueba1.txt a la rama"
 [santiago e4c1e73] agregado archivodeprueba1.txt a la rama
  1 file changed, 1 insertion(+)
  create mode 100644 archivodeprueba1.txt
@@ -68,8 +68,8 @@ Para este paso lo primero que tuve que hacer fue sincronizar mi main local con m
 git push origin main.
 Luego, una vez hecho eso ya pude etiquetar la versión del main y subir el tag, lo hice de la siguiente forma:
 
-Santiago:~$ git tag -a v1.0 -m "Versión inicial v1.0" 
-Santiago:~$ git push origin v1.0
+Santiago:$ git tag -a v1.0 -m "Versión inicial v1.0" 
+Santiago:$ git push origin v1.0
 Enumerando objetos: 1, listo.
 Contando objetos: 100% (1/1), listo.
 Escribiendo objetos: 100% (1/1), 175 bytes | 175.00 KiB/s, listo.
